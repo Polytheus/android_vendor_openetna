@@ -11,3 +11,19 @@ USE_CAMERA_STUB := true
 #What do the next two do?
 HAVE_HTC_AUDIO_DRIVER := true
 BOARD_USES_GENERIC_AUDIO := true
+
+#include stub directory
+FRAMEWORKS_BASE_SUBDIRS := \
+    $(addsuffix /java, \
+        core \
+        graphics \
+        location \
+        media \
+        opengl \
+        sax \
+        telephony \
+        wifi \
+        vpn \
+        keystore \
+        stub \
+     )
