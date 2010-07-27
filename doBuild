@@ -1,0 +1,3 @@
+. build/envsetup.sh
+choosecombo 1 1 generic eng
+make -j3
