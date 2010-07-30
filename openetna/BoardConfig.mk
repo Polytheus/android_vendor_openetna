@@ -27,3 +27,7 @@ FRAMEWORKS_BASE_SUBDIRS := \
         keystore \
         stub \
      )
+
+TARGET_BOARD_PLATFORM:= msm7k
+
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
