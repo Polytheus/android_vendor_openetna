@@ -5,12 +5,11 @@ TARGET_NO_KERNEL := true
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_ABI := armeabi
 
-#Or else it will complain about missing libcamera.so
-USE_CAMERA_STUB := true
+#Or else libcameraservice will complain about missing libcamera.so
+#USE_CAMERA_STUB := true
 
-#What do the next two do?
-HAVE_HTC_AUDIO_DRIVER := true
-BOARD_USES_GENERIC_AUDIO := true
+#BOARD_USES_GENERIC_AUDIO := true
+BOARD_HAVE_BLUETOOTH := true
 
 #include stub directory
 FRAMEWORKS_BASE_SUBDIRS := \

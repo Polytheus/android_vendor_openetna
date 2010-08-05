@@ -48,3 +48,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 PRODUCT_NAME := openetna
 PRODUCT_DEVICE := openetna
 PRODUCT_BRAND := openetna
+
+#Ugly
+out/target/product/openetna/obj/lib/libcamera.so: out/target/product/openetna/system/lib/libcamera.so
+	cp out/target/product/openetna/system/lib/libcamera.so out/target/product/openetna/obj/lib/libcamera.so
+
+PRODUCT_COPY_FILES := vendor/openetna/libcamera.so:system/lib/libcamera.so
