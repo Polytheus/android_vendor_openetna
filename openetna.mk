@@ -39,7 +39,8 @@ PRODUCT_PACKAGES := \
     Sync \
     Updater \
     CalendarProvider \
-    SyncProvider
+    SyncProvider \
+	SoundRecorder
 
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
