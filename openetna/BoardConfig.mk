@@ -1,7 +1,7 @@
 #Disable prelinking because the maps between this and our base do not match?
 TARGET_PRELINK_MODULE := false
 
-TARGET_NO_KERNEL := true
+TARGET_NO_KERNEL := false
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_ABI := armeabi
 
