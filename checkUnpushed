@@ -1,0 +1,1 @@
+repo forall -c 'git status | grep ahead && echo at `pwd`'
