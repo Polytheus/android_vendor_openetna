@@ -1,3 +1,8 @@
+#enable ccache
+export USE_CCACHE=1
+#set cache size
+./prebuilt/linux-x86/ccache/ccache -M 2G
+
 . build/envsetup.sh
 choosecombo 1 1 openetna eng
-make -j3
+time make -j3
